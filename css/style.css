@@ -1,0 +1,504 @@
+/*
+theme name:Gyan  
+Author:My polio
+version:2.0.0
+
+table of content
+=====================================
+
+1.Common css
+2.Nav section
+3.Banner Section
+*/
+
+/*Common css start*/
+
+
+h1,h2,h3,h4,h5,h6,
+p,
+ul,li,
+small{
+    margin: 0;
+    padding: 0;
+
+}
+ol,ul{
+    list-style-type:none ;
+}
+a,a:hover{
+    text-decoration: none;
+
+}
+.form-control{
+    border: none;
+}
+.secInfo{
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.secInfo .content{
+	text-align: center;
+	padding-bottom: 60px;
+}
+.secInfo .content h1{
+	font-size: 32px;
+	color: #2d3e50;
+   padding-bottom: 10px;
+}
+.secInfo .content p{
+	color: #666666;
+	font-size: 14px;
+	padding: 0 233px;
+}
+/* Common css end */
+
+/*Header Css Start*/
+ #header{
+    background-color: #2d3e50;
+    
+    line-height: 40px;
+     height: 40px;    
+ }
+
+ #header .header_item1,
+ #header .header_item2{
+    font-size: 14px;
+    color: white;
+  }
+ #header .header_item1 ul li{
+    display: inline;
+    padding-right: 15px;
+ }
+ #header .header_item2 ul li{
+    display: inline;
+ }
+ #header .header_item2 ul{
+    margin-left: 256px;
+ }
+ #header .header_item2 a{
+    color: white;
+    transition: all linear .4s; 
+ }
+ #header .header_item2 a:hover{
+    color: #fbaa33;
+ }
+ /* //Header Css End*/
+
+
+
+/* nav css start */
+#nav{
+   background-color: white;
+   height: 125px;
+   position: sticky;
+   z-index: 9999;
+}
+.active_menu{
+	position: fixed;
+   width: 100%;
+   top: 0;
+	animation: active_menu .6s;
+   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+	z-index: 99;
+}
+
+@keyframes active_menu {
+    0%{
+       top: 50%;
+    }
+    100%{
+        top: 0;
+    }
+}
+#nav .nav_item ul li a{
+   font-size: 22px;
+   font-weight: 400;
+   color: #425161;
+   padding: 20px;
+   transition: all .3s linear;
+}
+#nav .main_logo img{
+   padding-bottom: 20px;
+}
+#nav .nav_item{
+   padding-top: 12px;
+}
+#nav .nav_item ul li:hover a{
+   color: #fbaa33;
+}
+#nav .nav_item .topBtn{
+   font-size: 18px;
+   background-color: #fbaa33;
+   color: white;
+   padding: 10px 18px;
+   transition: all linear .4s;
+}
+#nav .nav_item .topBtn:hover{
+   background-color: #2d3e50;
+   border-color: transparent;
+}
+
+/* nav css end */
+
+/* banner section start */
+#banner .banner_slider_item{
+    height: 728px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+ }
+
+#banner .bannerContent{
+    padding-top: 138px;
+    padding-bottom: 230px;
+    color: white;
+}
+
+#banner .banner_slick_arrow{
+    width: 50px;
+    height: 50px;
+    background: orange;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    cursor: pointer;
+}
+#banner .banner_slick_arrow.fa-arrow-left{
+    left: 20px;
+}
+
+#banner .banner_slick_arrow.fa-arrow-right{
+    right: 20px;
+}
+
+#banner .banner_slider_dots{
+    position: absolute;
+    left: 1%;
+    transform: translate(-10);
+    bottom: 50px;
+}
+#banner .banner_slider_dots li{
+   display: inline-block;
+   margin: 0 5px;
+}
+
+#banner .banner_slider_dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: 2px solid orange;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#banner .banner_slider_dots li.slick-active button{
+    background: orange;
+    transform: scale(1.1);
+}
+#banner .bannerContent h3{
+    font-size: 40px;
+    font-weight: 400px;
+    text-transform: uppercase;
+}
+
+#banner .bannerContent h1{
+    font-size: 52px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+
+}
+#banner .bannerContent p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-right: 520px;
+    padding-bottom: 60px;
+}
+
+#banner .bannerContent a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: #2d3e50;
+    padding: 13px 22px;
+    transition: all linear.4s;
+    margin-right: 20px;
+ }
+
+ #banner .bannerContent a:hover{
+     background-color: #fbaa33;
+     border-color: transparent;
+ }
+/* banner section end */
+
+/* Support section start */
+/* #support{
+    transform: translateY(-102px);
+} */
+#support .supportContent{
+    background: #f5f5f5;
+    border-right: 2px solid #dddddd;
+    transition: all linear .4s;
+    padding: 30px;
+    transform: translateY(-50%);
+ }
+ #support .supportContent:hover{
+	box-shadow: 0 1px 12px rgb(110, 110, 110);
+}
+#support .supportContent img{
+	padding-bottom: 20px;
+}
+#support .supportContent h3{
+    color: #444444;
+     font-weight: 400;
+     font-size: 24px;
+     padding-bottom: 10px;
+ }
+
+ 
+ /* support section end */
+
+ /* about section start */
+ .about_slider_item{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding: 10px 0;
+ }
+ .about_slider{
+     position: relative;
+ }
+ .about_slider::after{
+     content: '';
+     position: absolute;
+     width: auto;
+     background-image: url(http://themesitem.com/demos/html/gyan/gyan/images/aboutSliderBorderTop.png);
+     height: 5px;
+     left: 0;
+     top: 0;
+     background-repeat: no-repeat;
+ }
+ .about_slider::before{
+    content: '';
+    position: absolute;
+    width: auto;
+    background-image: url(http://themesitem.com/demos/html/gyan/gyan/images/aboutSliderBorderTop.png);
+    height: 5px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+ .about_text{
+     padding: 20px 15px;
+    
+ }
+ #about a{
+ margin-right: 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+    background-color: #2d3e50;
+    padding: 13px 10px;
+    transition: all linear .4s;
+    margin-right: 20px;
+    margin-top: 30px;
+
+}
+
+#about a:hover{
+    background-color: #fbaa33;
+    border-color: transparent;
+
+}
+ /* about section end */
+
+ /* Course Section Css Start */
+#course .course_item .course_item_inner{
+    background: #F5F5F5;
+    border: 1px solid whitesmoke;
+    padding: 12px;
+ }
+ #course .course_item .course_thumb{
+    position: relative;
+ }
+ #course .course_item .course_thumb .overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #course .course_item .course_thumb .overlay a{
+    width: 50px;
+    height: 50px;
+    background: orange;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+   
+ }
+ /* #course .overlay a:hover{
+    
+    border-color: transparent;
+ } */
+ #course .course_item .course_thumb img{
+    width: 100%;
+ }
+
+ #course a{
+    margin-right: 20px;
+       display: inline-block;
+       font-size: 20px;
+       font-weight: 400px;
+       color: white;
+       background-color: #2d3e50;
+       padding: 13px 10px;
+       transition: all linear .4s;
+       margin-right: 120px;
+       margin-left: 120px;
+       margin-top: 30px;       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   
+   }
+ #course a:hover{
+    background-color: #fbaa33;
+    border-color: transparent;
+
+}
+
+#course .course_slick_arrow{
+    width: 50px;
+    height: 50px;
+    background: orange;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+#course .course_slick_arrow.fa-arrow-left{
+    left: -60px;
+}
+
+#course .course_slick_arrow.fa-arrow-right{
+    right: -60px;
+}
+ /* //Course Section Css End */
+
+
+
+ /* #course .item img{
+    padding: 20px 0;
+    margin: 20px;
+    width: 400px;
+}
+#course .item h4{
+    font-size: 25px;
+    width: 400px;
+    padding: 20px 0;
+}
+
+#course .item h3{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#course .item a{
+    
+       display: inline-block;
+       font-size: 20px;
+       font-weight: 400px;
+       color: white;
+       background-color: #2d3e50;
+       padding: 13px 0;
+       transition: all linear .4s;
+       margin-right: 20px;
+       margin-top: 30px;
+   
+   }
+   
+   #course .item a:hover{
+       background-color: #fbaa33;
+       border-color: transparent;
+   
+   } */
+
+
+   /* event css start*/
+#pb-calendar span.year,
+#pb-calendar span.month{
+   font-size: 22px;
+}
+   /* event css end*/
+ 
+   
+/* testimonial css start*/
+#faq .accordion-item{
+    margin-bottom: 50px;
+    border: 0;
+}
+#faq .accordion-item h2{
+    font-size: 20px;
+}
+#faq .accordion-button[ aria-expanded="true"]{
+   background-color: orange; 
+}
+#faq .accordion-button [ aria-expanded="false"]{
+    background-color: white;
+}
+
+.testimonial_slider_item{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding: 10px 0;
+ }
+/* testimonial css end*/
+
+ /* blogs section start */
+#blogs .blogs_item2{
+    margin: 20px 0;
+}
+ /* blogs section end */
+
+ /* footer css start */
+#footer .item{
+    padding: 20px;
+    
+}
+ /* footer css end */
+
+ /* back to top css start */
+#backToTop{
+    background: white;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border: 3px groove rgb(231, 154, 10);  
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    z-index: 9999;
+    display: none;
+}
+  
+
+  /* back to top css end */
